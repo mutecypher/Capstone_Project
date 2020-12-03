@@ -46,7 +46,7 @@ Note that the `echo = FALSE` parameter was added to the code chunk to prevent pr
 
 ```{r makes corpus}
 set.seed(1128)
-samp_per <- 0.75
+samp_per <- 0.7
 sam_twit <- tweet_all[sample(1:length(tweet_all),samp_per*length(tweet_all), replace = FALSE)]
 sam_test <- tweet_all[-sample(1:length(tweet_all),samp_per*length(tweet_all), replace = FALSE)]
 ## This is where I changed to a smaller sample size, this can be changed back
