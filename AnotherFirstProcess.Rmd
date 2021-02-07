@@ -1,7 +1,7 @@
 ---
 title: "anotherFirst"
 author: "Michael Pearson"
-date: "12/24/2020"
+date: "01/21/2021"
 output: pdf_document
 ---
 
@@ -45,8 +45,8 @@ close(news_us)
 Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
 
 ```{r makes corpus}
-set.seed(1224)
-samp_per <- 0.794
+set.seed(121)
+samp_per <- 0.796
 sam_twit <- tweet_all[sample(1:length(tweet_all),samp_per*length(tweet_all), replace = FALSE)]
 sam_test <- tweet_all[-sample(1:length(tweet_all),samp_per*length(tweet_all), replace = FALSE)]
 ## This is where I changed to a smaller sample size, this can be changed back
